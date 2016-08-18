@@ -1,13 +1,14 @@
 id,name,location,map_mode_id
 1,Dorado,Mexico,3
-2,Hanamura,Japan,1
-3,Hollywood,"Los Angeles, California, United States of America",4
-4,Ilios,Greece,2
-5,King's Row,"London, England",4
-6,Lijiang Tower,"Lijiang, China",2
-7,Route 66,"Route 66, United States of America",3
-8,Numbani,Nigeria,4
-9,Nepal,Nepal,2
-10,Temple of Anubis,Egypt,1
-11,Volskaya Industries,Russia,1
-12,Watchpoint: Gibraltar,The Rock of Gibraltar,3
+2,Eichenwalde,Germany,4
+3,Hanamura,Japan,1
+4,Hollywood,"Los Angeles, California, United States of America",4
+5,Ilios,Greece,2
+6,King's Row,"London, England",4
+7,Lijiang Tower,"Lijiang, China",2
+8,Route 66,"Route 66, United States of America",3
+9,Numbani,Nigeria,4
+10,Nepal,Nepal,2
+11,Temple of Anubis,Egypt,1
+12,Volskaya Industries,Russia,1
+13,Watchpoint: Gibraltar,The Rock of Gibraltar,3
