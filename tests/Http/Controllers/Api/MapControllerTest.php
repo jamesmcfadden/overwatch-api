@@ -3,9 +3,7 @@
 use App\Map;
 use App\Event;
 use App\MapStage;
-use Illuminate\Foundation\Testing\WithoutMiddleware;
 use Illuminate\Foundation\Testing\DatabaseMigrations;
-use Illuminate\Foundation\Testing\DatabaseTransactions;
 
 class MapControllerTest extends TestCase
 {
@@ -17,7 +15,7 @@ class MapControllerTest extends TestCase
     public function testMapList()
     {
         $maps = factory(Map::class, 2)->create([
-            'event_id' => factory(Event::class)->create()->id
+            'event_id' => factory(Event::class)->create()->id,
         ]);
 
         $this->json('GET', '/api/v1/map')
@@ -33,16 +31,16 @@ class MapControllerTest extends TestCase
                         'name' => $maps->first()->name,
                         'location' => $maps->first()->location,
                         'url' => $maps->first()->url,
-                        'event' => $maps->first()->event->jsonSerialize()
+                        'event' => $maps->first()->event->jsonSerialize(),
                     ],
                     [
                         'id' => $maps->get(1)->id,
                         'name' => $maps->get(1)->name,
                         'location' => $maps->get(1)->location,
                         'url' => $maps->get(1)->url,
-                        'event' => $maps->get(1)->event->jsonSerialize()
-                    ]
-                ]
+                        'event' => $maps->get(1)->event->jsonSerialize(),
+                    ],
+                ],
              ]);
     }
 
@@ -52,7 +50,7 @@ class MapControllerTest extends TestCase
     public function testMapShow()
     {
         $map = factory(Map::class)->create([
-            'event_id' => factory(Event::class)->create()->id
+            'event_id' => factory(Event::class)->create()->id,
         ]);
         $map->stages()->saveMany(factory(MapStage::class, 3)->create());
 
@@ -64,7 +62,7 @@ class MapControllerTest extends TestCase
                 'url' => $map->url,
                 'mode' => $map->mode->jsonSerialize(),
                 'stages' => $map->stages->jsonSerialize(),
-                'event' => $map->event->jsonSerialize()
+                'event' => $map->event->jsonSerialize(),
              ]);
     }
 }

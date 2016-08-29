@@ -2,9 +2,7 @@
 
 use App\Hero;
 use App\Importer;
-use Illuminate\Foundation\Testing\WithoutMiddleware;
 use Illuminate\Foundation\Testing\DatabaseMigrations;
-use Illuminate\Foundation\Testing\DatabaseTransactions;
 use Symfony\Component\Console\Output\NullOutput;
 
 class ImporterTest extends TestCase
