@@ -15,7 +15,7 @@ class CreateRewardTypesTable extends Migration
         Schema::create('reward_types', function (Blueprint $table) {
             $table->increments('id')->unsigned();
             $table->string('name');
-            
+
             $table->unique('name');
             $table->index('name');
         });

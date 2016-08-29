@@ -35,7 +35,7 @@ class AppServiceProvider extends ServiceProvider
     public function provides()
     {
         return [
-            'Symfony\Component\Console\Output\ConsoleOutputInterface'
+            'Symfony\Component\Console\Output\ConsoleOutputInterface',
         ];
     }
 }

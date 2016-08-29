@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 class Map extends Model
 {
     public $timestamps = false;
-    
+
     protected $hidden = ['map_mode_id', 'event_id'];
 
     protected $appends = ['url'];

@@ -2,8 +2,6 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
-use App\Http\Controllers\Controller;
 use App\Hero;
 use App\Ability;
 use App\Reward;
@@ -19,7 +17,7 @@ class IndexController extends Controller
             'abilityCount' => Ability::count(),
             'rewardCount' => Reward::count(),
             'mapCount' => Map::count(),
-            'achievementCount' => Achievement::count()
+            'achievementCount' => Achievement::count(),
         ]);
     }
 

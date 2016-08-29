@@ -39,7 +39,7 @@ class Handler extends ExceptionHandler
     public function report(Exception $e)
     {
         \Rollbar::report_exception($e);
-        
+
         parent::report($e);
     }
 
@@ -55,6 +55,7 @@ class Handler extends ExceptionHandler
         if ($request->wantsJson()) {
             return $this->renderJson($request, $e);
         }
+
         return parent::render($request, $e);
     }
 
@@ -108,10 +109,11 @@ class Handler extends ExceptionHandler
             'title' => $title,
             'detail' => $detail,
             'code' => null,
-            'meta' => $meta
+            'meta' => $meta,
         ];
+
         return new JsonResponse([
-            'error' => $exceptionData
+            'error' => $exceptionData,
         ], $status);
     }
 }

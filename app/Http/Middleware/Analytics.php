@@ -3,7 +3,6 @@
 namespace App\Http\Middleware;
 
 use Closure;
-use Illuminate\Http\Response;
 
 class Analytics
 {
@@ -19,7 +18,7 @@ class Analytics
      */
     public function handle($request, Closure $next, $guard = null)
     {
-        if (!config('app.analytics.server_ua')) {
+        if (! config('app.analytics.server_ua')) {
             return $next($request);
         }
         $params = [
@@ -29,8 +28,8 @@ class Analytics
             't' => 'pageview',
             'dp' => $request->getRequestUri(),
         ];
-        $url = self::BASE_URL . '?' . http_build_query($params);
-        
+        $url = self::BASE_URL.'?'.http_build_query($params);
+
         $ch = curl_init($url);
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
         curl_exec($ch);

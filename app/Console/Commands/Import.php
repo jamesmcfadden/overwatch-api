@@ -34,7 +34,7 @@ class Import extends Command
     public function __construct(Importer $importer)
     {
         parent::__construct();
-        
+
         $this->importer = $importer;
     }
 

@@ -211,7 +211,7 @@ return [
     ],
 
     'analytics' => [
-    
+
         // Google analytics for JS
         'client_ua' => env('CLIENT_UA'),
 

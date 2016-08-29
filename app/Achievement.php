@@ -3,12 +3,11 @@
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
-use App\Cost;
 
 class Achievement extends Model
 {
     public $timestamps = false;
-    
+
     protected $hidden = ['hero_id', 'reward_id'];
 
     protected $appends = ['url'];

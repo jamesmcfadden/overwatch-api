@@ -3,19 +3,18 @@
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
-use App\Cost;
 
 class Reward extends Model
 {
     public $timestamps = false;
-    
+
     protected $hidden = [
         'currency',
         'hero_id',
         'reward_type_id',
         'currency_id',
         'quality_id',
-        'event_id'
+        'event_id',
     ];
 
     protected $appends = ['cost', 'url'];
@@ -50,7 +49,6 @@ class Reward extends Model
         if ($this->currency) {
             return new Cost($this->currency, $this->attributes['cost']);
         }
-        return null;
     }
 
     public function getUrlAttribute()

@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 class Event extends Model
 {
     public $timestamps = false;
-    
+
     protected $appends = ['url'];
 
     public function rewards()

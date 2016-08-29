@@ -2,8 +2,6 @@
 
 namespace App;
 
-use App\Currency;
-
 class Cost
 {
     public $currency;
@@ -20,7 +18,7 @@ class Cost
     {
         return [
             'currency' => $this->currency,
-            'value' => $this->value
+            'value' => $this->value,
         ];
     }
 }
