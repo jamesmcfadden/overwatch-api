@@ -18,7 +18,7 @@ class ResourceController extends Controller
      */
     public function listResource(Model $resource, Request $request)
     {
-        if (!$resource instanceof ListableInterface) {
+        if (! $resource instanceof ListableInterface) {
             abort(404);
         }
 
@@ -36,7 +36,7 @@ class ResourceController extends Controller
      */
     public function showResource(Model $resource, $id)
     {
-        if (!$resource instanceof ShowableInterface) {
+        if (! $resource instanceof ShowableInterface) {
             abort(404);
         }
 

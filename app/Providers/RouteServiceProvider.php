@@ -4,8 +4,6 @@ namespace App\Providers;
 
 use Route;
 use Illuminate\Routing\Router;
-use App\Contracts\Model\ListableInterface;
-use App\Contracts\Model\ShowableInterface;
 use Illuminate\Foundation\Support\Providers\RouteServiceProvider as ServiceProvider;
 
 class RouteServiceProvider extends ServiceProvider
