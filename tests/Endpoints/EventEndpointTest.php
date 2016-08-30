@@ -3,9 +3,7 @@
 use App\Map;
 use App\Event;
 use App\Reward;
-use Illuminate\Foundation\Testing\WithoutMiddleware;
 use Illuminate\Foundation\Testing\DatabaseMigrations;
-use Illuminate\Foundation\Testing\DatabaseTransactions;
 
 class EventEndpointTest extends TestCase
 {
@@ -31,16 +29,16 @@ class EventEndpointTest extends TestCase
                         'name' => $events->first()->name,
                         'start_date' => $events->first()->start_date,
                         'end_date' => $events->first()->end_date,
-                        'url' => $events->first()->url
+                        'url' => $events->first()->url,
                     ],
                     [
                         'id' => $events->get(1)->id,
                         'name' => $events->get(1)->name,
                         'start_date' => $events->get(1)->start_date,
                         'end_date' => $events->get(1)->end_date,
-                        'url' => $events->get(1)->url
-                    ]
-                ]
+                        'url' => $events->get(1)->url,
+                    ],
+                ],
              ]);
     }
 
@@ -51,7 +49,7 @@ class EventEndpointTest extends TestCase
     {
         $event = factory(Event::class)->create();
         $rewards = factory(Reward::class, 20)->create([
-            'event_id' => $event->id
+            'event_id' => $event->id,
         ]);
         factory(Map::class)->create(['event_id' => $event->id]);
 
@@ -63,7 +61,7 @@ class EventEndpointTest extends TestCase
                 'end_date' => $event->end_date,
                 'url' => $event->url,
                 'maps' => $event->maps->jsonSerialize(),
-                'rewards' => $rewards->jsonSerialize()
+                'rewards' => $rewards->jsonSerialize(),
              ]);
     }
 }

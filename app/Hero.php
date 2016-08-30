@@ -46,7 +46,7 @@ class Hero extends Model implements ListableInterface, ShowableInterface
     public function getUrlAttribute()
     {
         return $this->attributes['url'] = route(
-            'api.show', 
+            'api.show',
             ['resource' => 'hero', 'id' => $this->attributes['id']]
         );
     }

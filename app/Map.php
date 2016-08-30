@@ -32,7 +32,7 @@ class Map extends Model implements ListableInterface, ShowableInterface
     public function getUrlAttribute()
     {
         return $this->attributes['url'] = route(
-            'api.show', 
+            'api.show',
             ['resource' => 'map', 'id' => $this->attributes['id']]
         );
     }

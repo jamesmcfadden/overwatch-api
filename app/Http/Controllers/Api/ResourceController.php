@@ -9,8 +9,8 @@ use App\Contracts\Model\ShowableInterface;
 class ResourceController extends Controller
 {
     /**
-     * List a resource within a pagination envelope
-     * 
+     * List a resource within a pagination envelope.
+     *
      * @param  App\Contracts\Model\ListableInterface $resource
      * @param  Request           $request
      * @return Illuminate\Pagination\LengthAwarePaginator
@@ -23,8 +23,8 @@ class ResourceController extends Controller
     }
 
     /**
-     * Show a resource
-     * 
+     * Show a resource.
+     *
      * @param  App\Contracts\Model\ShowableInterface $resource
      * @return App\Contracts\Model\ShowableInterface
      */

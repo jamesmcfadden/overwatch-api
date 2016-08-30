@@ -7,8 +7,8 @@ use Parsedown;
 class DocumentationController extends Controller
 {
     /**
-     * Parse and display markdown documentation for a given version
-     * 
+     * Parse and display markdown documentation for a given version.
+     *
      * @param  string $version For example 'v1'
      * @return Illuminate\Http\Response
      */

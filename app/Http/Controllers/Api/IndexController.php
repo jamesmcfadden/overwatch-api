@@ -5,10 +5,10 @@ namespace App\Http\Controllers\Api;
 class IndexController extends Controller
 {
     /**
-     * API directory list
+     * API directory list.
      *
      * @todo Need a better way of displaying these, i.e. a dynamic way!
-     * 
+     *
      * @return array
      */
     public function index()

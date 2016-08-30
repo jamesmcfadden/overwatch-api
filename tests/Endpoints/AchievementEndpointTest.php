@@ -2,9 +2,7 @@
 
 use App\Hero;
 use App\Achievement;
-use Illuminate\Foundation\Testing\WithoutMiddleware;
 use Illuminate\Foundation\Testing\DatabaseMigrations;
-use Illuminate\Foundation\Testing\DatabaseTransactions;
 
 class AchievementEndpointTest extends TestCase
 {
@@ -16,7 +14,7 @@ class AchievementEndpointTest extends TestCase
     public function testAchievementList()
     {
         $achievements = factory(Achievement::class, 2)->create([
-            'hero_id' => factory(Hero::class)->create()->id
+            'hero_id' => factory(Hero::class)->create()->id,
         ]);
 
         $achievements->load('reward.type', 'reward.quality');
@@ -35,7 +33,7 @@ class AchievementEndpointTest extends TestCase
                         'description' => $achievements->first()->description,
                         'url' => $achievements->first()->url,
                         'hero' => $achievements->first()->hero->jsonSerialize(),
-                        'reward' => $achievements->first()->reward->jsonSerialize()
+                        'reward' => $achievements->first()->reward->jsonSerialize(),
                     ],
                     [
                         'id' => $achievements->get(1)->id,
@@ -43,9 +41,9 @@ class AchievementEndpointTest extends TestCase
                         'description' => $achievements->get(1)->description,
                         'url' => $achievements->get(1)->url,
                         'hero' => $achievements->get(1)->hero->jsonSerialize(),
-                        'reward' => $achievements->get(1)->reward->jsonSerialize()
-                    ]
-                ]
+                        'reward' => $achievements->get(1)->reward->jsonSerialize(),
+                    ],
+                ],
              ]);
     }
 
@@ -55,7 +53,7 @@ class AchievementEndpointTest extends TestCase
     public function testAchievementShow()
     {
         $achievement = factory(Achievement::class)->create([
-            'hero_id' => factory(Hero::class)->create()->id
+            'hero_id' => factory(Hero::class)->create()->id,
         ]);
 
         $achievement->load('reward.type', 'reward.quality');
@@ -67,7 +65,7 @@ class AchievementEndpointTest extends TestCase
                 'description' => $achievement->description,
                 'url' => $achievement->url,
                 'hero' => $achievement->hero->jsonSerialize(),
-                'reward' => $achievement->reward->jsonSerialize()
+                'reward' => $achievement->reward->jsonSerialize(),
              ]);
     }
 }

@@ -11,8 +11,8 @@ use App\Achievement;
 class IndexController extends Controller
 {
     /**
-     * The homepage
-     * 
+     * The homepage.
+     *
      * @return Illuminate\Http\Response
      */
     public function index()

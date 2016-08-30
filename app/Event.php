@@ -25,7 +25,7 @@ class Event extends Model implements ListableInterface, ShowableInterface
     public function getUrlAttribute()
     {
         return $this->attributes['url'] = route(
-            'api.show', 
+            'api.show',
             ['resource' => 'event', 'id' => $this->attributes['id']]
         );
     }
