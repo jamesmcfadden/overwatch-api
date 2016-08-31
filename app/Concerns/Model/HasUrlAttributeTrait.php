@@ -14,7 +14,7 @@ trait HasUrlAttributeTrait
      */
     public function getUrlAttribute()
     {
-        if (!property_exists($this, 'resource')) {
+        if (! property_exists($this, 'resource')) {
             throw new ErrorException(
                 sprintf("Missing property 'resource' in %s required for %s", __CLASS__, __METHOD__)
             );

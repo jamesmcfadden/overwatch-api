@@ -10,7 +10,7 @@ use App\Concerns\Model\HasUrlAttributeTrait;
 class Ability extends Model implements ListableInterface, ShowableInterface
 {
     use HasUrlAttributeTrait;
-    
+
     public $timestamps = false;
 
     protected $resource = 'ability';
