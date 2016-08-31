@@ -36,6 +36,7 @@ class Importer
         'rewards',
         'achievements',
         'platforms',
+        'game_modes',
     ];
 
     /**

@@ -3,7 +3,7 @@
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreatePlatformsTable extends Migration
+class CreateGameModesTable extends Migration
 {
     /**
      * Run the migrations.
@@ -12,7 +12,7 @@ class CreatePlatformsTable extends Migration
      */
     public function up()
     {
-        Schema::create('platforms', function (Blueprint $table) {
+        Schema::create('game_modes', function (Blueprint $table) {
             $table->increments('id')->unsigned();
             $table->string('name');
         });
@@ -25,6 +25,6 @@ class CreatePlatformsTable extends Migration
      */
     public function down()
     {
-        Schema::drop('platforms');
+        Schema::drop('game_modes');
     }
 }
