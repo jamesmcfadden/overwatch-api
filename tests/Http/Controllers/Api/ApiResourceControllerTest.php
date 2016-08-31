@@ -116,7 +116,7 @@ class ApiResourceControllerTest extends TestCase
             'first' => url('/api/v1/hero?page=1'),
             'next' => url('/api/v1/hero?page=3'),
             'previous' => url('/api/v1/hero?page=1'),
-            'last' => url('/api/v1/hero?page=11')
+            'last' => url('/api/v1/hero?page=11'),
         ]);
     }
 }
