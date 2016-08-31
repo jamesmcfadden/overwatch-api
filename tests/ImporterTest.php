@@ -1,6 +1,5 @@
 <?php
 
-use App\Hero;
 use App\Importer;
 use Illuminate\Foundation\Testing\DatabaseMigrations;
 use Symfony\Component\Console\Output\NullOutput;
