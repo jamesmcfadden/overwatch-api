@@ -118,3 +118,16 @@ $factory->define(App\GameMode::class, function (Faker\Generator $faker) {
         'name' => $faker->md5,
     ];
 });
+
+$factory->define(App\Brawl::class, function (Faker\Generator $faker) {
+    return [
+        'brawl_type_id' => factory(App\BrawlType::class)->create()->id,
+        'start_date' => $faker->date('Y-m-d'),
+    ];
+});
+
+$factory->define(App\BrawlType::class, function (Faker\Generator $faker) {
+    return [
+        'name' => $faker->md5,
+    ];
+});
