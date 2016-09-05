@@ -13,7 +13,7 @@ class Brawl extends Model implements ListableInterface, ShowableInterface
     use HasUrlAttributeTrait;
 
     /**
-     * @var boolean
+     * @var bool
      */
     public $timestamps = false;
 
