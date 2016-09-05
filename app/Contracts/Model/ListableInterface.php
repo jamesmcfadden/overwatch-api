@@ -2,7 +2,13 @@
 
 namespace App\Contracts\Model;
 
+use Illuminate\Database\Eloquent\Builder;
+
 interface ListableInterface
 {
-    public function scopeList($query);
+    /**
+     * @param \Illuminate\Database\Eloquent\Builder
+     * @return \Illuminate\Database\Eloquent\Builder
+     */
+    public function scopeList(Builder $query);
 }

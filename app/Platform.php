@@ -3,6 +3,7 @@
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Builder;
 use App\Contracts\Model\ListableInterface;
 use App\Contracts\Model\ShowableInterface;
 
@@ -20,12 +21,12 @@ class Platform extends Model implements ListableInterface, ShowableInterface
         );
     }
 
-    public function scopeList($query)
+    public function scopeList(Builder $query)
     {
         return $query;
     }
 
-    public function scopeShow($query)
+    public function scopeShow(Builder $query)
     {
         return $query;
     }

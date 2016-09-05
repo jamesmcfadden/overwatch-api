@@ -3,6 +3,7 @@
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Builder;
 use App\Contracts\Model\ListableInterface;
 use App\Contracts\Model\ShowableInterface;
 use App\Concerns\Model\HasUrlAttributeTrait;
@@ -29,12 +30,12 @@ class Ability extends Model implements ListableInterface, ShowableInterface
         return (bool) $isUltimate;
     }
 
-    public function scopeList($query)
+    public function scopeList(Builder $query)
     {
         return $query->with('hero');
     }
 
-    public function scopeShow($query)
+    public function scopeShow(Builder $query)
     {
         return $query->with('hero');
     }

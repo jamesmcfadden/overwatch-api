@@ -2,7 +2,13 @@
 
 namespace App\Contracts\Model;
 
+use Illuminate\Database\Eloquent\Builder;
+
 interface ShowableInterface
 {
-    public function scopeShow($query);
+    /**
+     * @param \Illuminate\Database\Eloquent\Builder
+     * @return \Illuminate\Database\Eloquent\Builder
+     */
+    public function scopeShow(Builder $query);
 }

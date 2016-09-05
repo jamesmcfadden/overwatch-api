@@ -3,6 +3,7 @@
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Builder;
 use App\Contracts\Model\ListableInterface;
 use App\Contracts\Model\ShowableInterface;
 use App\Concerns\Model\HasUrlAttributeTrait;
@@ -34,12 +35,12 @@ class Map extends Model implements ListableInterface, ShowableInterface
         return $this->belongsTo('App\Event');
     }
 
-    public function scopeList($query)
+    public function scopeList(Builder $query)
     {
         return $query->with('event');
     }
 
-    public function scopeShow($query)
+    public function scopeShow(Builder $query)
     {
         return $query->with('mode', 'stages', 'event');
     }

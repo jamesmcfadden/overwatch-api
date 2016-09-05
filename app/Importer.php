@@ -37,6 +37,8 @@ class Importer
         'achievements',
         'platforms',
         'game_modes',
+        'brawl_types',
+        'brawls',
     ];
 
     /**

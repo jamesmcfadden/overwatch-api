@@ -3,6 +3,7 @@
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Builder;
 use App\Contracts\Model\ListableInterface;
 use App\Contracts\Model\ShowableInterface;
 use App\Concerns\Model\HasUrlAttributeTrait;
@@ -29,12 +30,12 @@ class Achievement extends Model implements ListableInterface, ShowableInterface
         return $this->belongsTo('App\Reward');
     }
 
-    public function scopeList($query)
+    public function scopeList(Builder $query)
     {
         return $query->with('hero', 'reward.type', 'reward.quality');
     }
 
-    public function scopeShow($query)
+    public function scopeShow(Builder $query)
     {
         return $query->with('hero', 'reward.type', 'reward.quality');
     }
