@@ -32,7 +32,7 @@ class CsvImporter implements ImporterInterface
     /**
      * Import data from an array of data paths.
      *
-     * The argument should be an associative array where the keys are 
+     * The argument should be an associative array where the keys are
      * table names and the values are absolute paths to the associated data files.
      *
      * For example:
@@ -40,7 +40,7 @@ class CsvImporter implements ImporterInterface
      * [
      *     'items' => '/path/to/items.csv'
      * ]
-     * 
+     *
      * @param  array $paths
      * @return void
      *
