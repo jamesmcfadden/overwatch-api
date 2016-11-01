@@ -87,7 +87,6 @@ class Reward extends Model implements ListableInterface, ShowableInterface
         if ($this->currency) {
             return new Cost($this->currency, $this->attributes['cost']);
         }
-        return null;
     }
 
     /**
