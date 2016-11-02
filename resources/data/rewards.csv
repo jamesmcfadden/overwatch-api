@@ -1563,3 +1563,119 @@ id,name,reward_type_id,hero_id,cost,currency_id,quality_id,event_id
 1572,Tricolore,7,19,,,3,1
 1573,Champion,7,21,,,4,1
 1574,Weightlifter,7,21,,,4,1
+1575,Ghoul,7,1,750,1,3,2
+1576,Tombstone,7,2,750,1,3,2
+1577,Demon,7,5,750,1,3,2
+1578,Possessed,7,11,750,1,3,2
+1579,Coldhardt,7,13,750,1,3,2
+1580,Immortal,7,15,750,1,3,2
+1581,Vampire,7,16,750,1,3,2
+1582,Skullyata,7,22,750,1,3,2
+1583,Dr. Junkenstein,7,6,3000,1,4,2
+1584,Witch,7,10,3000,1,4,2
+1585,Pumpkin,7,12,3000,1,4,2
+1586,Junkenstein’s Monster,7,14,3000,1,4,2
+1587,Candy,5,1,750,1,3,2
+1588,Pumpkin Smash,5,13,750,1,3,2
+1589,Shadow Puppets,5,20,750,1,3,2
+1590,R.I.P,4,1,225,1,2,2
+1591,R.I.P,4,2,225,1,2,2
+1592,R.I.P,4,3,225,1,2,2
+1593,R.I.P,4,4,225,1,2,2
+1594,R.I.P,4,5,225,1,2,2
+1595,R.I.P,4,6,225,1,2,2
+1596,R.I.P,4,7,225,1,2,2
+1597,R.I.P,4,8,225,1,2,2
+1598,R.I.P,4,9,225,1,2,2
+1599,R.I.P,4,10,225,1,2,2
+1600,R.I.P,4,11,225,1,2,2
+1601,R.I.P,4,12,225,1,2,2
+1602,R.I.P,4,13,225,1,2,2
+1603,R.I.P,4,14,225,1,2,2
+1604,R.I.P,4,15,225,1,2,2
+1605,R.I.P,4,16,225,1,2,2
+1606,R.I.P,4,17,225,1,2,2
+1607,R.I.P,4,18,225,1,2,2
+1608,R.I.P,4,19,225,1,2,2
+1609,R.I.P,4,20,225,1,2,2
+1610,R.I.P,4,21,225,1,2,2
+1611,R.I.P,4,22,225,1,2,2
+1612,Are You Scared?,2,1,75,1,1,2
+1613,W-W-Wooooo...?,2,2,75,1,1,2
+1614,Happy Halloween!,2,3,75,1,1,2
+1615,My Halloween Costume?,2,4,75,1,1,2
+1616,You Are Already Dead,2,5,75,1,1,2
+1617,Happy Halloween,2,6,75,1,1,2
+1618,Killed It!,2,7,75,1,1,2
+1619,It's Your Funeral,2,8,75,1,1,2
+1620,Scary!,2,9,75,1,1,2
+1621,Superstition,2,10,75,1,1,2
+1622,Dead Or Alive,2,11,75,1,1,2
+1623,I Work The Graveyard Shift,2,12,75,1,1,2
+1624,Smashing,2,13,75,1,1,2
+1625,Want Some Candy?,2,14,75,1,1,2
+1626,Knock Knock,2,15,75,1,1,2
+1627,A Frightening Thought,2,16,75,1,1,2
+1628,If You Build It,2,17,75,1,1,2
+1629,"Ooh, Scary!",2,18,75,1,1,2
+1630,The Party Is Over,2,19,75,1,1,2
+1631,This Is Not A Costume,2,20,75,1,1,2
+1632,Never Forget The Fallen,2,21,75,1,1,2
+1633,Trick Or Treat?,2,22,75,1,1,2
+1634,Trick Or Treat,1,1,75,1,1,2
+1635,Trick Or Treat,1,2,75,1,1,2
+1636,Trick Or Treat,1,3,75,1,1,2
+1637,Trick Or Treat,1,4,75,1,1,2
+1638,Trick Or Treat,1,5,75,1,1,2
+1639,Trick Or Treat,1,6,75,1,1,2
+1640,Trick Or Treat,1,7,75,1,1,2
+1641,Trick Or Treat,1,8,75,1,1,2
+1642,Trick Or Treat,1,9,75,1,1,2
+1643,Trick Or Treat,1,10,75,1,1,2
+1644,Trick Or Treat,1,11,75,1,1,2
+1645,Trick Or Treat,1,12,75,1,1,2
+1646,Trick Or Treat,1,13,75,1,1,2
+1647,Trick Or Treat,1,14,75,1,1,2
+1648,Trick Or Treat,1,15,75,1,1,2
+1649,Trick Or Treat,1,16,75,1,1,2
+1650,Trick Or Treat,1,17,75,1,1,2
+1651,Trick Or Treat,1,18,75,1,1,2
+1652,Trick Or Treat,1,19,75,1,1,2
+1653,Trick Or Treat,1,20,75,1,1,2
+1654,Trick Or Treat,1,21,75,1,1,2
+1655,Trick Or Treat,1,22,75,1,1,2
+1656,...Never Die,1,,75,1,1,2
+1657,Bats,1,,75,1,1,2
+1658,Boo!,1,,75,1,1,2
+1659,Boop!,1,,75,1,1,2
+1660,Candyball,1,,75,1,1,2
+1661,Fangs,1,,75,1,1,2
+1662,Gummy Hog,1,,75,1,1,2
+1663,Halloween Terror,1,,75,1,1,2
+1664,Pumpkins,1,,75,1,1,2
+1665,Witch’s Brew,1,,75,1,1,2
+1666,Rise Of The Zomnics,1,,,,1,2
+1667,Junkenstein's Revenge,1,,,,1,2
+1668,Halloween Special,1,,,,1,2
+1669,The Reapening,1,,,,1,2
+1670,Pumpkin Carving,6,4,750,1,3,2
+1671,Ice Scream,6,9,750,1,3,2
+1672,Eternal Rest,6,12,750,1,3,2
+1673,Halloween Terror 2016,3,,,,2,2
+1674,The Doctor,3,,,,2,2
+1675,The Monster,3,,,,2,2
+1676,The Reaper,3,,,,2,2
+1677,The Witch,3,,,,2,2
+1678,...Never Die,3,,,,2,2
+1679,Bewitching,3,,,,2,2
+1680,Calavera,3,,,,2,2
+1681,Candle,3,,,,2,2
+1682,Eyeball,3,,,,2,2
+1683,Ghostymari,3,,,,2,2
+1684,Spider,3,,,,2,2
+1685,Superstition,3,,,,2,2
+1686,Tombstone,3,,,,2,2
+1687,Vampachimari,3,,,,2,2
+1688,Witch’s Brew,3,,,,2,2
+1689,Witch's Hat,3,,,,2,2
+1690,Wolf,3,,,,2,2
