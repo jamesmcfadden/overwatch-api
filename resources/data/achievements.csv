@@ -60,3 +60,7 @@ id,name,description,hero_id,reward_id
 61,Raid Wipe,Kill 4 enemies during a single use of Torbjörn's Molten Core in Quick or Competitive Play.,17,451
 62,Enabler,Get 4 kills or assists with a single use of Ana's Nano Boost in Quick or Competitive Play.,1,51
 63,Naptime,Interrupt an enemy ultimate ability with Ana's Sleep Dart in Quick or Competitive Play.,1,63
+64,Four They Were,Win Junkenstein's Revenge using each of the 4 heroes.,,1666
+65,Survived the Night,Win Junkenstein's Revenge on medium difficulty.,,1667
+66,Not a Scratch,Win Junkenstein's Revenge on medium difficulty with no damage to the door.,,1669
+67,Held The Door,Win Junkenstein's Revenge on hard difficulty.,,1668
