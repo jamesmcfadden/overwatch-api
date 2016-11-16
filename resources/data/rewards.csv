@@ -1741,3 +1741,8 @@ id,name,reward_type_id,hero_id,cost,currency_id,quality_id,event_id
 1750,Hacking,6,23,250,1,3,
 1751,Pulse,6,23,250,1,3,
 1752,Undetected,6,23,250,1,3,
+1753,Oni,7,4,,,4,
+1754,Season 2 Competitor,1,,,,1,
+1755,Season 2 Hero,1,,,,1,
+1756,Season 3 Competitor,1,,,,1,
+1757,Season 3 Hero,1,,,,1,
