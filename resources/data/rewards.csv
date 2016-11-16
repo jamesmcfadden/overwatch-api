@@ -1746,3 +1746,4 @@ id,name,reward_type_id,hero_id,cost,currency_id,quality_id,event_id
 1755,Season 2 Hero,1,,,,1,
 1756,Season 3 Competitor,1,,,,1,
 1757,Season 3 Hero,1,,,,1,
+1758,Blizzcon 2016,7,2,,,3,
