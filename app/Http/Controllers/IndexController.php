@@ -2,10 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Hero;
-use App\Models\Ability;
-use App\Models\Reward;
 use App\Models\Map;
+use App\Models\Hero;
+use App\Models\Reward;
+use App\Models\Ability;
 use App\Models\Achievement;
 
 class IndexController extends Controller
