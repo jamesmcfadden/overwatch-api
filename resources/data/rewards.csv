@@ -1747,3 +1747,98 @@ id,name,reward_type_id,hero_id,cost,currency_id,quality_id,event_id
 1756,Season 3 Competitor,1,,,,1,
 1757,Season 3 Hero,1,,,,1,
 1758,Blizzcon 2016,7,2,,,3,
+1759,Andes,7,7,750,1,3,3
+1760,Scrooge,7,8,750,1,3,3
+1761,Frostbite,7,11,750,1,3,3
+1762,Shiver,7,12,750,1,3,3
+1763,Rudolph,7,14,750,1,3,3
+1764,Peppermint,7,23,750,1,3,3
+1765,Frosted,7,21,750,1,3,3
+1766,Mei-rry,7,9,3000,1,4,3
+1767,Santaclad,7,17,3000,1,4,3
+1768,Jingle,7,18,3000,1,4,3
+1769,Yeti,7,20,3000,1,4,3
+1770,Nutcracker,7,22,3000,1,4,3
+1771,Toast,4,1,225,1,2,3
+1772,Festive,4,3,225,1,2,3
+1773,Mistletoe,4,10,225,1,2,3
+1774,Toast,4,11,225,1,2,3
+1775,Toast,4,13,225,1,2,3
+1776,Toast,4,15,225,1,2,3
+1777,Toast,4,17,225,1,2,3
+1778,I'm Watching Out For You,2,1,75,1,1,3
+1779,Dwee Doo Hoo,2,2,75,1,1,3
+1780,"Aw, You Shouldn't Have",2,3,75,1,1,3
+1781,Merry Christmas!,2,4,75,1,1,3
+1782,A Gift For You,2,5,75,1,1,3
+1783,Merry Christmas,2,6,75,1,1,3
+1784,Happy Holidays!,2,7,75,1,1,3
+1785,Had To Break The Ice,2,8,75,1,1,3
+1786,I Got You Something!,2,9,75,1,1,3
+1787,Your Guardian Angel,2,10,75,1,1,3
+1788,The Forecast,2,11,75,1,1,3
+1789,Holiday Spirit,2,12,75,1,1,3
+1790,You're On My Naughty List,2,13,75,1,1,3
+1791,Ho Ho Ho,2,14,75,1,1,3
+1792,Stay Frosty,2,15,75,1,1,3
+1793,I Know Who's Been Naughty,2,23,75,1,1,3
+1794,I Made You Something,2,16,75,1,1,3
+1795,Made To Order,2,17,75,1,1,3
+1796,It's In The Bag,2,18,75,1,1,3
+1797,Exquisite,2,19,75,1,1,3
+1798,I... Got You Something,2,20,75,1,1,3
+1799,For The Motherland,2,21,75,1,1,3
+1800,No Snowflake,2,22,75,1,1,3
+1801,Ornament,1,1,75,1,1,3
+1802,Warm,1,1,75,1,1,3
+1803,Festive,1,2,75,1,1,3
+1804,Ornament,1,2,75,1,1,3
+1805,Cookie,1,3,75,1,1,3
+1806,Ornament,1,3,75,1,1,3
+1807,Kadomatsu,1,4,75,1,1,3
+1808,Ornament,1,4,75,1,1,3
+1809,Kadomatsu,1,5,75,1,1,3
+1810,Ornament,1,5,75,1,1,3
+1811,Ornament,1,6,75,1,1,3
+1812,Winter,1,6,75,1,1,3
+1813,Hockey,1,7,75,1,1,3
+1814,Ornament,1,7,75,1,1,3
+1815,Ornament,1,8,75,1,1,3
+1816,Ugly Sweater,1,8,75,1,1,3
+1817,Ornament,1,9,75,1,1,3
+1818,Sculpting,1,9,75,1,1,3
+1819,Ornament,1,10,75,1,1,3
+1820,Snow Angel,1,10,75,1,1,3
+1821,Ice Fishing,1,11,75,1,1,3
+1822,Ornament,1,11,75,1,1,3
+1823,Ornament,1,12,75,1,1,3
+1824,Stocking,1,12,75,1,1,3
+1825,Ice Fishing,1,13,75,1,1,3
+1826,Ornament,1,13,75,1,1,3
+1827,Ornament,1,14,75,1,1,3
+1828,"Winter",1,14,75,1,1,3
+1829,Army Man: 76,1,15,75,1,1,3
+1830,Ornament,1,15,75,1,1,3
+1831,Ornament,1,23,75,1,1,3
+1832,Puppet,1,23,75,1,1,3
+1833,Ornament,1,16,75,1,1,3
+1834,Snowflake,1,16,75,1,1,3
+1835,Ornament,1,17,75,1,1,3
+1836,Workshop,1,17,75,1,1,3
+1837,Ornament,1,18,75,1,1,3
+1838,Snowboarding,1,18,75,1,1,3
+1839,Ornament,1,19,75,1,1,3
+1840,Skiing,1,19,75,1,1,3
+1841,Ornament,1,20,75,1,1,3
+1842,Presents,1,20,75,1,1,3
+1843,Matryoshka,1,21,75,1,1,3
+1844,Ornament,1,21,75,1,1,3
+1845,Ornament,1,22,75,1,1,3
+1846,Snowball Fight,1,22,75,1,1,3
+1847,Snowhog,1,,75,1,1,3
+1848,Snow Reaper,1,,75,1,1,3
+1849,Snow Mei,1,,75,1,1,3
+1850,Snowcree,1,,75,1,1,3
+1851,Winter Wonderland,1,,75,1,1,3
+1852,Snowflakes,6,16,750,1,3,3
+1853,Under The Mistletoe,6,19,750,1,3,3
