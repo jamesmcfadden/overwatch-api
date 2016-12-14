@@ -1768,7 +1768,7 @@ id,name,reward_type_id,hero_id,cost,currency_id,quality_id,event_id
 1777,Toast,4,17,225,1,2,3
 1778,I'm Watching Out For You,2,1,75,1,2,3
 1779,Dwee Doo Hoo,2,2,75,1,2,3
-1780,Aw, You Shouldn't Have,2,3,75,1,2,3
+1780,"Aw, You Shouldn't Have",2,3,75,1,2,3
 1781,Merry Christmas!,2,4,75,1,2,3
 1782,A Gift For You,2,5,75,1,2,3
 1783,Merry Christmas,2,6,75,1,2,3
