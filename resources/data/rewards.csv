@@ -107,7 +107,7 @@ id,name,reward_type_id,hero_id,cost,currency_id,quality_id,event_id
 106,Heart,1,3,25,1,1,
 107,Icon,1,3,25,1,1,
 108,Light Gun,1,3,25,1,1,
-109,Love DVa,1,3,25,1,1,
+109,Love D.Va,1,3,25,1,1,
 110,Meka,1,3,25,1,1,
 111,Nano Cola,1,3,25,1,1,
 112,Photo,1,3,25,1,1,
@@ -629,7 +629,7 @@ id,name,reward_type_id,hero_id,cost,currency_id,quality_id,event_id
 628,A Steady Blade,2,4,,,1,
 629,Come On!,2,4,,1,1,
 630,Damn!,2,4,,1,1,
-631,Prepare yourself!,2,4,,1,1,
+631,I Am Prepared!,2,4,,1,1,
 632,Let's Fight!,2,4,,1,1,
 633,"Measure Twice, Cut Once",2,4,,1,1,
 634,My Soul Seeks Balance,2,4,,1,1,
@@ -1844,3 +1844,17 @@ id,name,reward_type_id,hero_id,cost,currency_id,quality_id,event_id
 1853,Under The Mistletoe,6,19,750,1,3,3
 1854,Balderich,7,13,1000,1,4,
 1855,Greifhardt,7,13,1000,1,4,
+1856,Not Impressed,5,1,250,1,3,
+1857,Take A Knee,5,1,250,1,3,
+1858,Dah-Dah Weeeee!,2,2,25,1,1,
+1859,Game On,5,3,1000,1,4,
+1860,^O^,5,3,250,1,3,
+1861,"Love, D.Va",2,3,25,1,1,
+1862,Can't Deal,5,6,250,1,3,
+1863,Lounging,5,6,250,1,3,
+1864,Joker,5,8,250,1,3,
+1865,Take A Load Off,5,8,250,1,3,
+1866,Hat Trick,5,8,250,1,3,3
+1867,Giggle,5,9,250,1,3,3
+1868,Kneel,5,9,250,1,3,3
+1869,Snowman,5,9,250,1,3,3
