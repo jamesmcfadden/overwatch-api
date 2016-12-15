@@ -1842,3 +1842,5 @@ id,name,reward_type_id,hero_id,cost,currency_id,quality_id,event_id
 1851,Winter Wonderland,1,,75,1,1,3
 1852,Snowflakes,6,16,750,1,3,3
 1853,Under The Mistletoe,6,19,750,1,3,3
+1854,Balderich,7,13,1000,1,4,
+1855,Greifhardt,7,13,1000,1,4,
