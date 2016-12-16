@@ -924,12 +924,12 @@ id,name,reward_type_id,hero_id,cost,currency_id,quality_id,event_id
 923,Sakura,3,,,,2,
 924,Scooter,3,,,,2,
 925,Six-Gun Killer,3,,,,2,
-926,Syvatogor,3,,,,2,
+926,Svyatogor,3,,,,2,
 927,They Came From Beyond The Moon,3,,,,2,
 928,Totem,3,,,,2,
 929,Training Bot,3,,,,2,
 930,Vivi,3,,,,2,
-931,Alliance,3,,,,2,
+931,For The Alliance,3,,,,2,
 932,Barbarian,3,,,,2,
 933,Crusader,3,,,,2,
 934,Dark Lady,3,,,,2,
@@ -943,7 +943,7 @@ id,name,reward_type_id,hero_id,cost,currency_id,quality_id,event_id
 942,Jim,3,,,,2,
 943,Lich King,3,,,,2,
 944,Monk,3,,,,2,
-945,Murloc,3,,,,2,
+945,Rikimaru,3,,,,2,
 946,Nexus,3,,,,2,
 947,Protoss,3,,,,2,
 948,Queen of Blades,3,,,,2,
@@ -951,9 +951,8 @@ id,name,reward_type_id,hero_id,cost,currency_id,quality_id,event_id
 950,Witch Doctor,3,,,,2,
 951,Wizard,3,,,,2,
 952,Zerg,3,,,,2,
-953,Blue Scars,3,,,,2,
-954,Hooded Lady,3,,,,2,
-955,Spaceman Sunglasses,3,,,,2,
+953,Varian,3,,,,2,
+955,Siege Mode,3,,,,2,
 956,Top 500,3,,,,2,
 957,Season 1 Competitor,3,,,,2,
 958,Season 1 Hero,3,,,,2,
@@ -1517,24 +1516,24 @@ id,name,reward_type_id,hero_id,cost,currency_id,quality_id,event_id
 1516,Archery,3,,,,2,1
 1517,Badminton,3,,,,2,1
 1518,Basketball,3,,,,2,1
-1519,Biking,3,,,,2,1
+1519,Cycling,3,,,,2,1
 1520,Boxing,3,,,,2,1
-1521,Dirt Biking,3,,,,2,1
+1521,BMX,3,,,,2,1
 1522,Equestrian,3,,,,2,1
 1523,Fencing,3,,,,2,1
-1524,Golfing,3,,,,2,1
+1524,Golf,3,,,,2,1
 1525,Gymnastics,3,,,,2,1
-1526,Martial Arts,3,,,,2,1
-1527,Ribbon Dancing,3,,,,2,1
+1526,Taekwondo,3,,,,2,1
+1527,Rhythmic Gymnastics,3,,,,2,1
 1528,Shooting,3,,,,2,1
 1529,Football,3,,,,2,1
-1530,Swimming,3,,,,2,1
+1530,Diving,3,,,,2,1
 1531,Table Tennis,3,,,,2,1
 1532,Tennis,3,,,,2,1
 1533,Track,3,,,,2,1
 1534,Volleyball,3,,,,2,1
 1535,Water Polo,3,,,,2,1
-1536,Weight Lifting,3,,,,2,1
+1536,Weightlifting,3,,,,2,1
 1547,Wrestling,3,,,,2,1
 1548,Medal,4,9,,,2,1
 1549,Medal,4,11,,,2,1
@@ -1858,3 +1857,29 @@ id,name,reward_type_id,hero_id,cost,currency_id,quality_id,event_id
 1867,Giggle,5,9,250,1,3,3
 1868,Kneel,5,9,250,1,3,3
 1869,Snowman,5,9,250,1,3,3
+1870,You Are Not Prepared,3,,,,2,
+1871,Lord Of Candy,3,,,,2,
+1872,Oni,3,,,,2,
+1873,Australia,3,,,,2,1
+1874,Brazil,3,,,,2,1
+1875,China,3,,,,2,1
+1876,Egypt,3,,,,2,1
+1877,France,3,,,,2,1
+1878,Germany,3,,,,2,1
+1879,Greece,3,,,,2,1
+1880,Japan,3,,,,2,1
+1881,Mexico,3,,,,2,1
+1882,Nepal,3,,,,2,1
+1883,Numbani,3,,,,2,1
+1884,Russia,3,,,,2,1
+1885,South Korea,3,,,,2,1
+1886,Sweden,3,,,,2,1
+1887,Switzerland,3,,,,2,1
+1888,United Kingdom,3,,,,2,1
+1889,United States Of America,3,,,,2,1
+1890,Ana,3,,,,2,
+1891,Watcher,3,,,,2,
+1892,Wedjat,3,,,,2,
+1893,Sombra,3,,,,2,
+1894,Hacker,3,,,,2,
+1895,Skull,3,,,,2,
