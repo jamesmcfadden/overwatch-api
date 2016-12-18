@@ -66,3 +66,7 @@ id,name,description,hero_id,reward_id
 67,Held The Door,Win Junkenstein's Revenge on hard difficulty.,,1668
 68,Hack The Planet,Hack 15 enemies without dying as Sombra in quick or competitive play.,23,1737
 69,Power Outtage,Hack 6 enemies at once as Sombra in quick or competitive play.,23,1725
+70,Ambush!,Kill 3 enemies while they are picking up snow in a game of Mei's Snowball Offensive.,,1847
+71,Cool As Ice,Kill 4 enemies without missing in Mei's Snowball Offensive.,,1848
+72,Snowed In,Win Mei's Snowball Offensive without losing a round.,,1849
+73,Whap!,Kill an enemy with a snowball from 25 meters away in Mei's Snowball Offensive.,,1850
