@@ -16,7 +16,7 @@ class BrawlEndpointTest extends TestCase
         $brawls = factory(Brawl::class, 2)->create();
 
         $this->json('GET', '/api/v1/brawl')
-             ->seeJsonEquals([
+             ->assertJson([
                 'total' => $brawls->count(),
                 'first' => url('/api/v1/brawl?page=1'),
                 'next' => null,
@@ -47,7 +47,7 @@ class BrawlEndpointTest extends TestCase
         $brawl = factory(Brawl::class)->create();
 
         $this->json('GET', sprintf('/api/v1/brawl/%s', $brawl->id))
-             ->seeJsonEquals([
+             ->assertJson([
                 'id' => $brawl->id,
                 'start_date' => $brawl->start_date,
                 'url' => $brawl->url,

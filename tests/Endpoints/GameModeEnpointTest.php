@@ -15,7 +15,7 @@ class GameModeEndpointTest extends TestCase
         $gameModes = factory(GameMode::class, 2)->create();
 
         $this->json('GET', '/api/v1/game-mode')
-             ->seeJsonEquals([
+             ->assertJson([
                 'total' => $gameModes->count(),
                 'first' => url('/api/v1/game-mode?page=1'),
                 'next' => null,
@@ -44,7 +44,7 @@ class GameModeEndpointTest extends TestCase
         $gameMode = factory(GameMode::class)->create();
 
         $this->json('GET', sprintf('/api/v1/game-mode/%s', $gameMode->id))
-             ->seeJsonEquals([
+             ->assertJson([
                 'id' => $gameMode->id,
                 'name' => $gameMode->name,
                 'url' => $gameMode->url,

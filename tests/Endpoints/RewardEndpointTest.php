@@ -17,7 +17,7 @@ class RewardEndpointTest extends TestCase
         $rewards = factory(Reward::class, 2)->create();
 
         $this->json('GET', '/api/v1/reward')
-             ->seeJsonEquals([
+             ->assertJson([
                 'total' => $rewards->count(),
                 'first' => url('/api/v1/reward?page=1'),
                 'next' => null,
@@ -27,7 +27,7 @@ class RewardEndpointTest extends TestCase
                     [
                         'id' => $rewards->first()->id,
                         'name' => $rewards->first()->name,
-                        'cost' => $rewards->first()->cost,
+                        'cost' => $rewards->first()->cost->jsonSerialize(),
                         'url' => $rewards->first()->url,
                         'type' => $rewards->first()->type->jsonSerialize(),
                         'quality' => $rewards->first()->quality->jsonSerialize(),
@@ -35,7 +35,7 @@ class RewardEndpointTest extends TestCase
                     [
                         'id' => $rewards->get(1)->id,
                         'name' => $rewards->get(1)->name,
-                        'cost' => $rewards->get(1)->cost,
+                        'cost' => $rewards->get(1)->cost->jsonSerialize(),
                         'url' => $rewards->get(1)->url,
                         'type' => $rewards->get(1)->type->jsonSerialize(),
                         'quality' => $rewards->get(1)->quality->jsonSerialize(),
@@ -55,12 +55,12 @@ class RewardEndpointTest extends TestCase
         ]);
 
         $this->json('GET', sprintf('/api/v1/reward/%s', $reward->id))
-             ->seeJsonEquals([
+             ->assertJson([
                 'id' => $reward->id,
                 'name' => $reward->name,
-                'cost' => $reward->cost,
+                'cost' => $reward->cost->jsonSerialize(),
                 'url' => $reward->url,
-                'type' => $reward->type,
+                'type' => $reward->type->jsonSerialize(),
                 'hero' => $reward->hero->jsonSerialize(),
                 'quality' => $reward->quality->jsonSerialize(),
                 'event' => $reward->event->jsonSerialize(),

@@ -15,7 +15,7 @@ class RewardTypeEndpointTest extends TestCase
         $rewardTypes = factory(RewardType::class, 2)->create();
 
         $this->json('GET', '/api/v1/reward-type')
-             ->seeJsonEquals([
+             ->assertJson([
                 'total' => $rewardTypes->count(),
                 'first' => url('/api/v1/reward-type?page=1'),
                 'next' => null,
@@ -44,7 +44,7 @@ class RewardTypeEndpointTest extends TestCase
         $rewardType = factory(RewardType::class)->create();
 
         $this->json('GET', sprintf('/api/v1/reward-type/%s', $rewardType->id))
-             ->seeJsonEquals([
+             ->assertJson([
                 'id' => $rewardType->id,
                 'name' => $rewardType->name,
                 'url' => $rewardType->url,

@@ -20,7 +20,7 @@ class AchievementEndpointTest extends TestCase
         $achievements->load('reward.type', 'reward.quality');
 
         $this->json('GET', '/api/v1/achievement')
-             ->seeJsonEquals([
+             ->assertJson([
                 'total' => $achievements->count(),
                 'first' => url('/api/v1/achievement?page=1'),
                 'next' => null,
@@ -59,7 +59,7 @@ class AchievementEndpointTest extends TestCase
         $achievement->load('reward.type', 'reward.quality');
 
         $this->json('GET', sprintf('/api/v1/achievement/%s', $achievement->id))
-             ->seeJsonEquals([
+             ->assertJson([
                 'id' => $achievement->id,
                 'name' => $achievement->name,
                 'description' => $achievement->description,

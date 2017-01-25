@@ -18,7 +18,7 @@ class HeroEndpointTest extends TestCase
         $heroes = factory(Hero::class, 2)->create();
 
         $this->json('GET', '/api/v1/hero')
-             ->seeJsonEquals([
+             ->assertJson([
                 'total' => $heroes->count(),
                 'first' => url('/api/v1/hero?page=1'),
                 'next' => null,
@@ -76,7 +76,7 @@ class HeroEndpointTest extends TestCase
         $hero->load('role', 'subRoles', 'abilities', 'rewards.type', 'rewards.quality', 'rewards.event');
 
         $this->json('GET', sprintf('/api/v1/hero/%s', $hero->id))
-             ->seeJsonEquals([
+             ->assertJson([
                 'id' => $hero->id,
                 'name' => $hero->name,
                 'description' => $hero->description,

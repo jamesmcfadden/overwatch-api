@@ -15,7 +15,7 @@ class AbilityEndpointTest extends TestCase
         $abilities = factory(Ability::class, 2)->create();
 
         $this->json('GET', '/api/v1/ability')
-             ->seeJsonEquals([
+             ->assertJson([
                 'total' => $abilities->count(),
                 'first' => url('/api/v1/ability?page=1'),
                 'next' => null,
@@ -50,7 +50,7 @@ class AbilityEndpointTest extends TestCase
         $ability = factory(Ability::class)->create();
 
         $this->json('GET', sprintf('/api/v1/ability/%s', $ability->id))
-             ->seeJsonEquals([
+             ->assertJson([
                 'id' => $ability->id,
                 'name' => $ability->name,
                 'description' => $ability->description,

@@ -15,7 +15,7 @@ class PlatformEndpointTest extends TestCase
         $platforms = factory(Platform::class, 2)->create();
 
         $this->json('GET', '/api/v1/platform')
-             ->seeJsonEquals([
+             ->assertJson([
                 'total' => $platforms->count(),
                 'first' => url('/api/v1/platform?page=1'),
                 'next' => null,
@@ -44,7 +44,7 @@ class PlatformEndpointTest extends TestCase
         $platform = factory(Platform::class)->create();
 
         $this->json('GET', sprintf('/api/v1/platform/%s', $platform->id))
-             ->seeJsonEquals([
+             ->assertJson([
                 'id' => $platform->id,
                 'name' => $platform->name,
                 'url' => $platform->url,
