@@ -7,9 +7,8 @@ class DocumentationControllerTest extends TestCase
      */
     public function testDocumentationResponseIsOk()
     {
-        $response = $this->call('GET', '/docs/v1');
-
-        $this->assertResponseOk();
+        $this->call('GET', '/docs/v1')
+             ->assertStatus(200);
     }
 
     /**
@@ -17,8 +16,7 @@ class DocumentationControllerTest extends TestCase
      */
     public function testInvalidDocumentationVersionReturnsNotFound()
     {
-        $response = $this->call('GET', '/docs/v20');
-
-        $this->assertResponseStatus(404);
+        $this->call('GET', '/docs/v20')
+             ->assertStatus(404);
     }
 }

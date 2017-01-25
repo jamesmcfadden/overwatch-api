@@ -17,7 +17,7 @@ class EventEndpointTest extends TestCase
         $events = factory(Event::class, 2)->create();
 
         $this->json('GET', '/api/v1/event')
-             ->seeJsonEquals([
+             ->assertJson([
                 'total' => $events->count(),
                 'first' => url('/api/v1/event?page=1'),
                 'next' => null,
@@ -54,7 +54,7 @@ class EventEndpointTest extends TestCase
         factory(Map::class)->create(['event_id' => $event->id]);
 
         $this->json('GET', sprintf('/api/v1/event/%s', $event->id))
-             ->seeJsonEquals([
+             ->assertJson([
                 'id' => $event->id,
                 'name' => $event->name,
                 'start_date' => $event->start_date,

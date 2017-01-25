@@ -17,18 +17,29 @@ class ApiResourceControllerTest extends TestCase
     public function testListResourceReturnsTheCorrectResource()
     {
         $heroes = factory(Hero::class, 50)->create();
-        $hero = $heroes->get(2);
 
         $response = $this->call('GET', '/api/v1/hero');
-
-        $this->assertResponseOk();
-        $this->assertEquals('*', $response->headers->get('Access-Control-Allow-Origin'));
-
-        $this->seeJson([
-            'id' => $hero->id,
-            'name' => $hero->name,
-            'description' => $hero->description,
+        $response->assertStatus(200);
+        $response->assertJson([
+            'data' => [
+                [
+                    'id' => $heroes->get(0)->id,
+                    'name' => $heroes->get(0)->name,
+                    'description' => $heroes->get(0)->description,
+                ],
+                [
+                    'id' => $heroes->get(1)->id,
+                    'name' => $heroes->get(1)->name,
+                    'description' => $heroes->get(1)->description,
+                ],
+                [
+                    'id' => $heroes->get(2)->id,
+                    'name' => $heroes->get(2)->name,
+                    'description' => $heroes->get(2)->description,
+                ],
+            ],
         ]);
+        $response->assertHeader('Access-Control-Allow-Origin', '*');
     }
 
     /**
@@ -41,14 +52,13 @@ class ApiResourceControllerTest extends TestCase
 
         $response = $this->call('GET', sprintf('/api/v1/hero/%s', $hero->id));
 
-        $this->assertResponseOk();
-        $this->assertEquals('*', $response->headers->get('Access-Control-Allow-Origin'));
-
-        $this->seeJson([
+        $response->assertStatus(200);
+        $response->assertJson([
             'id' => $hero->id,
             'name' => $hero->name,
             'description' => $hero->description,
         ]);
+        $response->assertHeader('Access-Control-Allow-Origin', '*');
     }
 
     /**
@@ -56,9 +66,8 @@ class ApiResourceControllerTest extends TestCase
      */
     public function testListInvalidResourceReturnsPageNotFound()
     {
-        $this->call('GET', '/api/v1/cake');
-
-        $this->assertResponseStatus(404);
+        $this->call('GET', '/api/v1/cake')
+             ->assertStatus(404);
     }
 
     /**
@@ -66,9 +75,8 @@ class ApiResourceControllerTest extends TestCase
      */
     public function testShowInvalidResourceReturnsPageNotFound()
     {
-        $this->call('GET', '/api/v1/cake/99');
-
-        $this->assertResponseStatus(404);
+        $this->call('GET', '/api/v1/cake/99')
+             ->assertStatus(404);
     }
 
     /**
@@ -82,8 +90,6 @@ class ApiResourceControllerTest extends TestCase
 
         $controller = new ResourceController();
         $controller->showResource($model, 1);
-
-        $this->assertResponseStatus(404);
     }
 
     /**
@@ -98,8 +104,6 @@ class ApiResourceControllerTest extends TestCase
 
         $controller = new ResourceController();
         $controller->listResource($model, $request);
-
-        $this->assertResponseStatus(404);
     }
 
     /**
@@ -109,11 +113,10 @@ class ApiResourceControllerTest extends TestCase
     {
         $heroes = factory(Hero::class, 201)->create();
 
-        $this->call('GET', sprintf('/api/v1/hero?limit=%d&page=%d', 20, 2));
+        $response = $this->call('GET', sprintf('/api/v1/hero?limit=%d&page=%d', 20, 2));
 
-        $this->assertResponseOk();
-
-        $this->seeJson([
+        $response->assertStatus(200);
+        $response->assertJson([
             'total' => $heroes->count(),
             'first' => url('/api/v1/hero?page=1'),
             'next' => url('/api/v1/hero?page=3'),
@@ -122,12 +125,14 @@ class ApiResourceControllerTest extends TestCase
         ]);
     }
 
+    /**
+     * @return void
+     */
     public function testResourceNotFoundReturnsPageNotFound()
     {
         $heroes = factory(Hero::class, 5)->create();
 
-        $this->call('GET', sprintf('/api/v1/hero/%d', 5000));
-
-        $this->assertResponseStatus(404);
+        $this->call('GET', sprintf('/api/v1/hero/%d', 5000))
+             ->assertStatus(404);
     }
 }

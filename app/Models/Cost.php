@@ -2,7 +2,11 @@
 
 namespace App\Models;
 
-class Cost
+use JsonSerializable;
+use Illuminate\Contracts\Support\Jsonable;
+use Illuminate\Contracts\Support\Arrayable;
+
+class Cost implements Arrayable, Jsonable, JsonSerializable
 {
     /**
      * @var string
@@ -33,5 +37,26 @@ class Cost
             'currency' => $this->currency,
             'value' => $this->value,
         ];
+    }
+
+    /**
+     * Convert the object to its JSON representation.
+     *
+     * @param  int  $options
+     * @return string
+     */
+    public function toJson($options = 0)
+    {
+        return json_encode($this->jsonSerialize(), $options);
+    }
+
+    /**
+     * Convert the object into something JSON serializable.
+     *
+     * @return array
+     */
+    public function jsonSerialize()
+    {
+        return $this->toArray();
     }
 }

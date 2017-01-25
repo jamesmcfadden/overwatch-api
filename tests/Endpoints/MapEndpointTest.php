@@ -19,7 +19,7 @@ class MapEndpointTest extends TestCase
         ]);
 
         $this->json('GET', '/api/v1/map')
-             ->seeJsonEquals([
+             ->assertJson([
                 'total' => $maps->count(),
                 'first' => url('/api/v1/map?page=1'),
                 'next' => null,
@@ -55,7 +55,7 @@ class MapEndpointTest extends TestCase
         $map->stages()->saveMany(factory(MapStage::class, 3)->create());
 
         $this->json('GET', sprintf('/api/v1/map/%s', $map->id))
-             ->seeJsonEquals([
+             ->assertJson([
                 'id' => $map->id,
                 'name' => $map->name,
                 'location' => $map->location,

@@ -11,15 +11,16 @@ class IndexControllerTest extends TestCase
      */
     public function testIndexResponseIsOk()
     {
-        $response = $this->call('GET', '/');
-
-        $this->assertResponseOk();
+        $this->call('GET', '/')
+             ->assertStatus(200);
     }
 
+    /**
+     * @return void
+     */
     public function testContributionResponseIsOk()
     {
-        $response = $this->call('GET', '/contribution');
-
-        $this->assertResponseOk();
+        $this->call('GET', '/contribution')
+             ->assertStatus(200);
     }
 }
