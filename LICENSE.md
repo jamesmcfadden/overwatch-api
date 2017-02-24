@@ -1,4 +1,4 @@
-Copyright (c) 2016, James McFadden
+Copyright (c) 2017 James McFadden
 All rights reserved.
 
 Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
