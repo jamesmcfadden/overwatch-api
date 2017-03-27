@@ -1883,3 +1883,5 @@ id,name,reward_type_id,hero_id,cost,currency_id,quality_id,event_id
 1893,Sombra,3,,,,2,
 1894,Hacker,3,,,,2,
 1895,Skull,3,,,,2,
+1896,Pixel,1,24,,,1,
+1897,Cute,1,24,,,1,

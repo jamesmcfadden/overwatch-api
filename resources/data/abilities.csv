@@ -108,3 +108,8 @@ id,name,description,hero_id,is_ultimate
 107,Thermoptic Camo,"Sombra becomes invisible for a short period of time, during which her speed is boosted considerably. Attacking, using offensive abilities, or taking damage disables her camouflage.",23,0
 108,Translocator,"Sombra tosses out a translocator beacon. She can instantly return to the beacon’s location while it is active (including when it’s in mid-flight).",23,0
 109,EMP,"Sombra discharges electromagnetic energy in a wide radius, destroying enemy barriers and shields and hacking all opponents caught in the blast.",23,1
+110,Fusion Driver,"Orisa’s automatic projectile cannon delivers sustained damage, but slows her movement while she fires it.",24,0
+111,Halt!,"Orisa launches a graviton charge which she can detonate, slowing nearby enemies and pulling them towards the explosion.",24,0
+112,Fortify,"Orisa temporarily reduces damage she takes, and cannot be affected by action-impairing effects.",24,0
+113,Protective Barrier,"Orisa throws out a stationary barrier that can protect her and her allies from enemy fire.",24,0
+114,Supercharger,"Orisa deploys a device to increase damage by 50% inflicted by allies within its line of sight.",24,1

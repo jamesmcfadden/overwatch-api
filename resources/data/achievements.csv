@@ -70,3 +70,5 @@ id,name,description,hero_id,reward_id
 71,Cool As Ice,Kill 4 enemies without missing in Mei's Snowball Offensive.,,1848
 72,Snowed In,Win Mei's Snowball Offensive without losing a round.,,1849
 73,Whap!,Kill an enemy with a snowball from 25 meters away in Mei's Snowball Offensive.,,1850
+74,Halt State,"Pull enemies into 1000 damage with a single use of Orisa's Halt! in quick or competitive play.",24,1896
+75,Overclocked,"Amplify 900 damage with a single use of Orisa's Supercharger in quick or competitive play.",24,1897
