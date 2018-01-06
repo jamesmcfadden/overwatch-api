@@ -113,3 +113,8 @@ id,name,description,hero_id,is_ultimate
 112,Fortify,"Orisa temporarily reduces damage she takes, and cannot be affected by action-impairing effects.",24,0
 113,Protective Barrier,"Orisa throws out a stationary barrier that can protect her and her allies from enemy fire.",24,0
 114,Supercharger,"Orisa deploys a device to increase damage by 50% inflicted by allies within its line of sight.",24,1
+115,Biotic Grasp (left),"Using her left hand, Moira expends biotic energy to heal allies in front of her.",25,0
+116,Biotic Graph (right),"Her right hand fires a long-range beam weapon that saps enemies’ health, healing Moira and replenishing her biotic energy.",25,0
+117,Biotic Orb,"Moira launches a rebounding biotic sphere; she can choose between a regeneration effect that heals the allies it passes through, or a decay effect that deals damage to enemies.",25,0
+118,Fade,"Moira quickly teleports a short distance while invulnerable to damage.",25,0
+119,Coalescence,"Moira channels a long-range beam that both heals allies and bypasses barriers to damage her enemies.",25,1

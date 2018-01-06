@@ -72,3 +72,5 @@ id,name,description,hero_id,reward_id
 73,Whap!,Kill an enemy with a snowball from 25 meters away in Mei's Snowball Offensive.,,1850
 74,Halt State,"Pull enemies into 1000 damage with a single use of Orisa's Halt! in quick or competitive play.",24,1896
 75,Overclocked,"Amplify 900 damage with a single use of Orisa's Supercharger in quick or competitive play.",24,1897
+76,Antipode,"Hit 7 targets simultaneously with Moira's Coalescence in Quick or Competitive play.",25,1898
+77,Simple Trigonometry,"Fully deplete both types of Moira's Biotic Orb without dying in Quick or Competitive play.",25,1899
