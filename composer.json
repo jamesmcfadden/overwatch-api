@@ -10,7 +10,7 @@
         "laravel/tinker": "~1.0",
         "erusev/parsedown": "1.6.*",
         "rollbar/rollbar": "~0.18.0",
-        "doctrine/dbal": "^2.5"
+        "doctrine/dbal": "2.5.13"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",
